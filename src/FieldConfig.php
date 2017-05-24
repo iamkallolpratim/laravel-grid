@@ -46,6 +46,10 @@ class FieldConfig
 
     protected $is_hidden = false;
 
+    protected $styleAttributes = '';
+
+    protected $format = 'string';
+
     /**
      * Constructor.
      *
@@ -332,7 +336,7 @@ class FieldConfig
             return $row->getCellValue($this);
         }
     }
-    
+
     public function addStyleAttribute($name, $value){
         $this->styleAttributes = $this->styleAttributes. $name. ':' . $value . ';';
         return $this;
