@@ -12,7 +12,7 @@ use Nayjest\Grids\Components\CsvExport;
             ->getInputProcessor()
             ->getUrl([CsvExport::INPUT_PARAM => 1])
         ?>"
-        class="btn btn-sm btn-secondary"
+        class="btn btn-sm btn-warning"
         >
         <span class="glyphicon glyphicon-export"></span>
         CSV Export
